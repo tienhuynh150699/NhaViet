@@ -1,4 +1,5 @@
 ﻿
+using ShopNhaViet.Logic;
 using ShopNhaViet.Models;
 using System;
 using System.Collections.Generic;
@@ -20,15 +21,15 @@ namespace ShopNhaViet
             var _db = new ShopNhaViet.Models.LienKet();
             IQueryable<PhanLoai> query = _db.PhanLoais;
             return query;
-        }        //protected void Page_PreRender(object sender, EventArgs e)
-        //{
-        //    using (ShoppingCartActions usersShoppingCart = new
-        //    ShoppingCartActions())
-        //    {
-        //        string cartStr = string.Format("Cart ({0})",
-        //        usersShoppingCart.GetCount());
-        //        cartCount.InnerText = cartStr;
-        //    }
-        //}
+        }        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            using (ShoppingCartActions usersShoppingCart = new
+            ShoppingCartActions())
+            {
+                string cartStr = string.Format("Giỏ Hàng ({0})",
+                usersShoppingCart.GetCount());
+                cartCount.InnerText = cartStr;
+            }
+        }
     }
 }
