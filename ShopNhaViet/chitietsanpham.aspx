@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="chitietsanpham.aspx.cs" Inherits="ShopNhaViet.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <asp:FormView ID="chitietsanpham" runat="server"
-        ItemType="ShopNhaViet.Models.SanPham" SelectMethod ="GetDetails"
+        ItemType="ShopNhaViet.Models.SanPham" SelectMethod ="GetSanPhams"
          RenderOuterTable="false">
          <ItemTemplate>
          <div>
@@ -16,12 +16,12 @@
          </td>
          <td>&nbsp;</td>
          <td style="vertical-align: top; text-align:left;">
-         <b>Description:</b><br /><%#:Item.MoTa %>
+         <b>Mô Tả:</b><br /><%#:Item.MoTa %>
          <br />
-         <span><b>Price:</b>&nbsp;<%#: String.Format("{0:c}",Item.GiaTien)
+         <span><b>Gia:</b>&nbsp;<%#: String.Format("{0:c}",Item.GiaTien)
         %></span>
          <br />
-         <span><b>Book Number:</b>&nbsp;<%#:Item.SanPhamID %></span>
+         <span><b>Stt:</b>&nbsp;<%#:Item.SanPhamID %></span>
          <br />
          </td>
          </tr>

@@ -7,6 +7,6 @@ namespace ShopNhaViet.Models
         public LienKet() : base("BooksShopOnline")
         { }
         public DbSet<PhanLoai> PhanLoais { get; set; }
-        public DbSet<SanPham> SanPhams { get; set; }        //public DbSet<CartItem> ShoppingCartItems { get; set; }
+        public DbSet<SanPham> SanPhams { get; set; }        public DbSet<CartItem> ShoppingCartItems { get; set; }
     }
 }

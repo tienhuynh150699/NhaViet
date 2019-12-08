@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Shop Nhà Việt</title>
+    <title> Shop Nhà Việt</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -46,13 +46,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Nhà Việt</a>
+                    <a class="navbar-brand" runat="server" href="~/TrangChu">Nhà Việt</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/TrangChu">Trang Chủ</a></li>
                         <li><a runat="server" href="~/ListSanPham">Sản Phẩm</a></li>
-                        <li><a runat="server" href="~/">Thông Tin</a></li>
+                        <li><a runat="server" href="~/TrangChu">Thông Tin</a></li>
+                        <li><a runat="server" href="~/ShoppingCart" ID="cartCount">&nbsp;</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,7 +85,7 @@ BorderStyle="None" />
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Shop Nhà Việt</p>
+                <p>&copy; <%: DateTime.Now.Year %>  Shop Nhà Việt</p>
             </footer>
         </div>
 

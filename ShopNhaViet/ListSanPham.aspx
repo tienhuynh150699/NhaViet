@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListSanPham.aspx.cs" Inherits="ShopNhaViet.WebForm1" %>
+﻿<%@ Page Title="Sản Phẩm" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListSanPham.aspx.cs" Inherits="ShopNhaViet.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <section>
          <div>
@@ -34,7 +34,7 @@
          </td>
          </tr>
          <tr>
-         <%--<td>
+         <td>
          <a href="chitietsanpham.aspx?SanPhamID=<%#:Item.SanPhamID%>">
          <span>
          <%#:Item.TenSanPham%>
@@ -42,15 +42,15 @@
          </a>
          <br />
          <span>
-         <b>Price: </b><%#:String.Format("{0:c}",Item.MoTa)%>
+         <b>Giá Tiền: </b><%#:String.Format("{0:c}",Item.MoTa)%>
          </span>
          <br />
-             <a href="AddToCart.aspx?bookID=<%#:Item.SanPhamID%>">
+             <a href="AddToCart.aspx?SanPhamID=<%#:Item.SanPhamID%>">
              <span>
-             <b>Add To Cart<b>
+             <b>Thêm Vào Giỏ<b>
              </span>
              </a>
-         </td>--%>
+         </td>
          </tr>
          <tr>
          <td>&nbsp;</td>

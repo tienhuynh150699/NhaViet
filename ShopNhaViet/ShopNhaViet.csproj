@@ -138,6 +138,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="ListSanPham.aspx" />
     <Content Include="chitietsanpham.aspx" />
+    <Content Include="ShoppingCart.aspx" />
+    <Content Include="AddToCart.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -176,6 +178,8 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Logic\ShoppingCartActions.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\DulieuShopNhaViet.cs" />
     <Compile Include="Models\LienKet.cs" />
     <Compile Include="Models\PhanLoai.cs" />
@@ -225,6 +229,20 @@
     </Compile>
     <Compile Include="chitietsanpham.aspx.designer.cs">
       <DependentUpon>chitietsanpham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddToCart.aspx.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToCart.aspx.designer.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
